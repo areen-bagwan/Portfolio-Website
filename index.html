@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areen Bagwan | Data Analyst & Developer</title>
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#00897b">
+    <link rel="apple-touch-icon" href="https://cdn-icons-png.flaticon.com/512/1157/1157109.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bg-deep: #002b2d;
+            --bg-mid: #004d40;
+            --bg-accent: #00897b;
+            --glass-bg: rgba(255, 255, 255, 0.95);
+            --glass-border: rgba(255, 255, 255, 1);
+            --text-main: #002b2d;
+            --text-muted: #37474f;
+        }
+
+        html { scroll-behavior: smooth; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--bg-deep), var(--bg-mid), #00695c);
+            background-attachment: fixed;
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        /* --- BACKGROUND ANIMATION --- */
+        .space-container { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; }
+        .stars {
+            width: 1px; height: 1px; background: transparent;
+            box-shadow: 174px 138px #fff, 745px 346px #fff, 1225px 143px #fff, 568px 579px #fff;
+            animation: animStar 50s linear infinite;
+        }
+        @keyframes animStar { from { transform: translateY(0px); } to { transform: translateY(-2000px); } }
+        
+        .half-moon {
+            position: absolute; top: 40px; right: 60px; width: 60px; height: 60px;
+            border-radius: 50%; box-shadow: -12px 0 0 0 rgba(255, 255, 255, 0.8);
+            filter: drop-shadow(0 0 10px rgba(255,255,255,0.3)); transform: rotate(-15deg);
+        }
+
+        .content-wrapper { max-width: 1100px; margin: 0 auto; padding: 0 25px; position: relative; z-index: 10; }
+
+        nav { 
+            display: flex; justify-content: space-between; align-items: center; 
+            padding: 15px 45px; margin-top: 25px;
+            background: var(--glass-bg); border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2); border: 1px solid var(--glass-border);
+        }
+        .nav-links { list-style: none; display: flex; gap: 20px; }
+        .nav-links a { text-decoration: none; font-weight: 600; color: var(--text-muted); font-size: 0.85rem; }
+
+        .glass-panel {
+            background: var(--glass-bg); border: 1px solid var(--glass-border); 
+            border-radius: 24px; padding: 40px; box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+
+        .section-title {
+            display: inline-block; font-size: 1.4rem; font-weight: 700; text-transform: uppercase;
+            padding: 8px 30px; border-radius: 50px; background: #fff; margin-bottom: 40px;
+            border-bottom: 4px solid var(--bg-accent); color: var(--bg-deep);
+        }
+
+        /* --- EDUCATION & SKILLS --- */
+        .edu-item { border-left: 4px solid var(--bg-accent); padding-left: 20px; margin-bottom: 20px; position: relative; }
+        .edu-tag { font-size: 0.7rem; background: #e0f2f1; color: var(--bg-deep); padding: 2px 8px; border-radius: 10px; font-weight: bold; }
+
+        .btn {
+            padding: 12px 25px; background: var(--bg-accent); color: white; text-decoration: none; 
+            border-radius: 10px; font-weight: 700; display: inline-block; transition: 0.3s;
+        }
+        .btn-secondary { background: #f1f5f9; color: var(--bg-deep); margin-top: 10px; border: 1px solid #cbd5e1; }
+        .btn:hover { filter: brightness(1.1); transform: translateY(-2px); }
+
+        footer { text-align: center; padding: 40px; color: rgba(255,255,255,0.7); }
+    </style>
+</head>
+<body>
+
+    <div class="space-container"><div class="stars"></div><div class="half-moon"></div></div>
+
+    <main class="content-wrapper">
+        <nav>
+            <div style="font-weight: 800;">AREEN<span style="color:var(--bg-accent)">.</span>DEV</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <section id="home" style="padding: 100px 0; text-align: center;">
+            <div class="glass-panel">
+                <h1 style="font-size: 3rem;">Areen Bagwan</h1>
+                <p style="color: var(--bg-accent); font-weight: 800; text-transform: uppercase;">Data Analyst & AIML Student</p>
+            </div>
+        </section>
+
+        <section id="education" style="padding: 40px 0; text-align: center;">
+            <h2 class="section-title">Education</h2>
+            <div class="glass-panel" style="max-width: 800px; margin: 0 auto; text-align: left;">
+                <div class="edu-item">
+                    <span class="edu-tag">CURRENT</span>
+                    <h4>B.Tech in AI & Machine Learning</h4>
+                    <p>Second Year Pursuing</p>
+                </div>
+                <div class="edu-item">
+                    <span class="edu-tag">12TH GRADE - 80%</span>
+                    <h4>Poona College of Arts, Science & Commerce</h4>
+                    <p>Science and Commerce Stream (11th-12th)</p>
+                </div>
+                <div class="edu-item">
+                    <span class="edu-tag">10TH GRADE - 84%</span>
+                    <h4>Rosary High School</h4>
+                    <p>Primary & Secondary Education (Std 1-10)</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" style="padding: 40px 0; text-align: center;">
+            <h2 class="section-title">Projects</h2>
+            <div class="glass-panel" style="max-width: 600px; margin: 0 auto; text-align: left;">
+                <h3>Wellness+</h3>
+                <p style="margin-bottom: 20px;">AI-Powered Proactive Health Companion</p>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <a href="https://wellnesspluss.vercel.app/" target="_blank" class="btn">Primary: AI Health</a>
+                    <a href="https://wellnessplus.vercel.app/" target="_blank" class="btn btn-secondary">Secondary: Health Companion</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" style="padding: 40px 0; text-align: center;">
+            <div class="glass-panel" style="max-width: 400px; margin: 0 auto;">
+                <div style="font-size: 2rem; display: flex; justify-content: space-around;">
+                    <a href="https://github.com/areen-bagwan" target="_blank" style="color: var(--bg-deep);"><i class="fab fa-github"></i></a>
+                    <a href="mailto:areenbagwan24@gmail.com" style="color: var(--bg-deep);"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <footer><p>&copy; 2026 Areen Bagwan</p></footer>
+    </main>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                .then(reg => console.log('Service Worker Registered'))
+                .catch(err => console.log('Service Worker Failed', err));
+            });
+        }
+    </script>
+</body>
+</html>
